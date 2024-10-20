@@ -36,6 +36,7 @@ public class gradeSystem {
 
         }
         //output the grade
+        System.out.println(" Your marks is: " + totalMarks);
         System.out.println("The grade is: " + grade);
         
 
