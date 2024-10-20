@@ -12,18 +12,34 @@ public class gradeSystem {
         int marks2 = sc.nextInt();
 
         //calculate the total marks
-        int total = marks1 + marks2;
-        int grade = 85;
-        if (grade >= 90) {
-            System.out.println("A");
-        } else if (grade >= 80) {
-            System.out.println("B");
-        } else if (grade >= 70) {
-            System.out.println("C");
-        } else if (grade >= 60) {
-            System.out.println("D");
-        } else {
-            System.out.println("F");
+
+        int totalMarks = marks1 + marks2;
+        char grade;
+        switch(totalMarks/6){
+            case 10:
+            case 9:
+                grade = 'A';
+                break;
+            case 8:
+                grade = 'B';
+                break;
+            case 7:
+                grade = 'C';
+                break;
+            case 6:
+                grade = 'D';
+                break;
+            default:
+                grade = 'F';
+                break;
+
+
         }
+        //output the grade
+        System.out.println("The grade is: " + grade);
+        
+
+        
+                
     }
 }
