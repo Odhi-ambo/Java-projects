@@ -5,10 +5,10 @@ public class gradeSystem {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enter the first grade: ");
+        System.out.println("Enter the first marks: ");
         int marks1 = sc.nextInt();
 
-        System.out.println("Enter the second grade: ");
+        System.out.println("Enter the second marks: ");
         int marks2 = sc.nextInt();
 
         //calculate the total marks
